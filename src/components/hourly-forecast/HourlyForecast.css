@@ -1,0 +1,82 @@
+.list-container {
+  display: flex;
+  gap: .5rem;
+
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.list-container::-webkit-scrollbar {
+  display: none;
+}
+
+.list-item {
+  font-family: "Outfit", sans-serif;
+
+  min-width: 18rem;
+  max-width: 18rem;
+  min-height: 15rem;
+  max-height: 15rem;
+  
+  padding: auto;
+
+  border: none;
+  border-radius: 1rem;
+  
+  background-color: #7dd3fc;
+
+  transition: all .1s;
+}
+
+.list-item > span {
+  font-size: 1.25rem;
+}
+
+.list-item > img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.list-item:hover {
+  background-color: #1d4ed8;
+}
+
+.list-item:hover > span {
+  display: none;
+}
+
+.list-item:hover > img {
+  display: none;
+}
+
+.list-item-details {
+  display: none;
+}
+
+.list-item:hover .list-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  list-style: none;
+  padding: 1rem;
+
+  font-size: 1rem;
+}
+
+.list-item-details-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-item-details-label {
+  color: #38bdf8;
+}
+
+.list-item-details-value {
+  color: #facc15;
+}
+
